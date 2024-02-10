@@ -44,6 +44,7 @@ body {
 .main:has(.card:target) {
   --img1: scale(0);
   --img2: scale(1);
+  --clip: inset(0 0 0 0);
 }
 
 .dropdown {
@@ -95,6 +96,9 @@ body {
   background-color: var(--white);
   width: 250px;
   border-radius: 10px;
+
+  clip-path: var(--clip, inset(50% 52% 50% 48%));
+  transition: 0.5s;
 }
 
 .card__img {
