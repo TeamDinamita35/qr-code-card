@@ -12,29 +12,34 @@
     />
 
     <title>Frontend Mentor | QR code component</title>
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <article class="card">
-      <img src="./assets/images/image-qr-code.png" class="card__img" />
-      <section class="card__info">
-        <h2 class="card__title">
-          Improve your front-end skills by building projects
-        </h2>
-        <p class="card__text">
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level.
-        </p>
-      </section>
-    </article>
+    <main class="main">
+      <div class="dropdown">
+        <!-- <h2 class="dropdown__title">Show the card</h2> -->
+        <a href="#qr" class="dropdown__menu"
+          ><img src="./assets/images/down.svg" class="dropdown__icon"
+        /></a>
+        <a href="#" class="dropdown__menu dropdown__menu--second"
+          ><img src="./assets/images/close.svg" class="dropdown__icon"
+        /></a>
+        <!-- <ul class="dropdown__ul" id="menu"></ul> -->
+      </div>
+      <article class="card" id="qr">
+        <img src="./assets/images/image-qr-code.png" class="card__img" />
+        <section class="card__info">
+          <h2 class="card__title">
+            Improve your front-end skills by building projects
+          </h2>
+          <p class="card__text">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level.
+          </p>
+        </section>
+      </article>
+
+      <!-- <a class="content" href="#"></a> -->
+    </main>
     <!-- Prueba 2 -->
   </body>
 </html>
